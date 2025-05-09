@@ -105,6 +105,14 @@ server:
 ```
 
 ---
+⚠️ Make sure both HotelDB and RatingDB databases exist in MySQL. You can create them using:
+
+sql
+Copy
+Edit
+CREATE DATABASE HotelDB;
+CREATE DATABASE RatingDB;
+
 
 ## 🔄 **Inter-Service Communication**  
 - Hotel Service uses `RestTemplate` to call:  
@@ -157,9 +165,4 @@ curl -X POST http://localhost:9090/rating/addrating \
 
 ---
 
-### 🎨 **Color Palette Used**  
-- Headers: `#2563EB` (Blue)  
-- Code Blocks: `#1E293B` (Dark slate)  
-- Tables: `#F1F5F9` (Light gray)  
-- Highlights: `#10B981` (Emerald)  
-# hotel-Management
+
